@@ -21,7 +21,7 @@ logging.basicConfig(level=logging.INFO)
 if os.path.exists("Internal"):
    load_dotenv("Internal")
 
-print("Kaal xD...")
+print("Khuni xD...")
 
 aditya = TelegramClient('KaalXD', os.getenv('API_ID'), os.getenv('API_HASH')).start(bot_token=os.getenv('BOT_TOKEN'))
 
