@@ -21,11 +21,11 @@ logging.basicConfig(level=logging.INFO)
 if os.path.exists("Internal"):
    load_dotenv("Internal")
 
-print("Kaal xD...")
+print("Khuni xD...")
 
 aditya = TelegramClient('KaalXD', os.getenv('API_ID'), os.getenv('API_HASH')).start(bot_token=os.getenv('BOT_TOKEN'))
 
-Kaal = [6041171540, 5336023580, 5051631130, 1896406786, 5379949226]
+Kaal = [5230338052, 5379949226, 5572604378, 1896406786, 5379949226]
 for x in os.getenv('SUDO'):
     Kaal.append(x)
 
@@ -34,7 +34,7 @@ print("Bᴏᴏᴛɪɴɢ...")
 @aditya.on(events.NewMessage(pattern="^!ping"))  
 async def ping(e):
         start = datetime.now()
-        text = "Kaal xD!"
+        text = "Khuni xD!"
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
@@ -45,11 +45,11 @@ print("Sᴛᴀʀᴛɪɴɢ Pɪɴɢ......")
 @aditya.on(events.NewMessage(pattern="^!ping"))  
 async def ping(e):
         start = datetime.now()
-        text = "Kᴀᴀʟ XD ..."
+        text = "Khuni XD ..."
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"__Mᴇ Iᴢᴢ Aʟɪᴠᴇ__\n\n __Kᴀᴀʟ Xd__ !! `{ms}` ms")
+        await event.edit(f"__Mᴇ Iᴢᴢ Aʟɪᴠᴇ__\n\n __Khuni Xd__ !! `{ms}` ms")
 
 print("Lᴏᴀᴅɪɴɢ BᴀɴAʟʟ...")
 @aditya.on(events.NewMessage(pattern="^!banall"))
@@ -66,7 +66,7 @@ async def testing(event):
        if not admin and not creator:
            await event.reply("Pʟᴇᴀsᴇ Cᴏɴғɪʀᴍ Mʏ Rɪɢʜᴛs !!")
            return
-       await event.reply("Fᴜᴋɪɴɢ !! Sᴛᴀʀᴛᴇᴅ...Bʏ Kᴀᴀʟ xD...")
+       await event.reply("Fᴜᴋɪɴɢ !! Sᴛᴀʀᴛᴇᴅ...Bʏ Khuni xD...")
        everyone = await event.client.get_participants(event.chat_id)
        for user in everyone:
            if user.id == BADNAM.id:
@@ -99,7 +99,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("Fᴜᴄᴋɪɴɢ Sᴛᴏᴘᴘᴇᴅ...Cᴏɴᴛᴀᴄᴛ Kᴀᴀʟ xD.")
+                await event.edit("Fᴜᴄᴋɪɴɢ Sᴛᴏᴘᴘᴇᴅ...Cᴏɴᴛᴀᴄᴛ Khuni xD.")
             except Exception as e:
                 await event.edit(str(e))   
           
@@ -127,7 +127,7 @@ async def start(event):
 *Hᴇʏ !!,*
 Wᴇʟᴄᴏᴍᴇ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴍ ᴀᴄᴛɪᴏɴ ʙᴏᴛ's ᴍᴇɴᴜ. \n I ᴄᴀɴ ʙᴀɴ ᴀʟʟ ᴍᴇᴍʙᴇʀs ɪɴ ɢʀᴏᴜᴘs ᴀɴᴅ ᴄʜᴀɴɴᴇʟs.
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
-‣ Managed By - @III_KAAL_III ❥︎
+‣ Managed By - @MrKhunii ❥︎
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 ➛ Nᴇᴇᴅ Hᴇʟᴘ /help ××
 """,
@@ -161,6 +161,6 @@ async def help(event):
                    )
 
 print("\n\n")
-print("Bᴏᴛ Dᴇᴘʟᴏʏᴍᴇɴᴛ Sᴜᴄᴄᴇss!! Iғ Aɴʏ Pʀᴏʙʟᴇᴍ Fᴀᴄɪɴɢ Tʜᴇɴ Cᴏɴᴛᴀᴄᴛ @III_KAAL_III")
+print("Bᴏᴛ Dᴇᴘʟᴏʏᴍᴇɴᴛ Sᴜᴄᴄᴇss!! Iғ Aɴʏ Pʀᴏʙʟᴇᴍ Fᴀᴄɪɴɢ Tʜᴇɴ Cᴏɴᴛᴀᴄᴛ @MrKhunii")
 
 aditya.run_until_disconnected()
